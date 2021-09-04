@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="shortcut icon" href="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B" class="rounded-full" />
+      <link
+         rel="Pingo icon"
+         sizes="76x76"
+         href="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B">
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+         />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <title>Pingo </title>
+      <style>
+         .pink{
+         background-color: #FF0062;
+
+         }
+         .pink1 {
+            color : #FF0062;
+         }
+
+         .btn-grad {background-image: linear-gradient(to right, #FF0062 0%, #F7F719  51%, #F7F719  100%)}
+         .btn-grad {
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+         }
+
+         .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+         }
+
+
+      </style>
+   </head>
+   <body class="text-gray-800 antialiased">
+      <nav id="header" class="fixed bg-white text-black w-full z-50 top-0 ">
+         <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-1 py-1 px-1">
+            <div class="block lg:hidden pl-8 p-2">
+               <a class="text-black-300 font-bold text-base no-underline hover:no-underline" href="#">
+               Pingo
+               </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+               <button id="nav-toggle" class="flex items-center px-3 py-2 text-black-300 border-gray-600 focus:outline-none">
+                  <svg fill="text-black-300" viewBox="0 0 20 20" class="w-6 h-6 fill-current">
+                     <title>Menu</title>
+                     <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+            </div>
+            <div class="w-full flex-grow p-4 lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 md:bg-transparent z-20 bg-opacity-50"
+               id="nav-content">
+               <ul class="list-reset lg:flex justify-center flex-1 items-center">
+                  <li class="mr-3">
+                     <a class=" inline-block py-2 px-4 text-black-300 font-bold"
+                        href="#">
+                     <img
+                        alt="Pingo"
+                        class="object-scale-down w-10 rounded-lg shadow-lg"
+                        src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B"
+                        />
+                     </a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4 uppercase font-Roboto" href="#story">Story</a>
+                  </li>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4 uppercase  " href="#about">About</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4 uppercase" href="#store">Store</a>
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4 uppercase" href="#BUSINESS">BUSINESS</a>
+
+                  <li class="mr-3">
+                     <a class="inline-block hover:text-black-300 hover:text-underline py-2 px-4 uppercase" href="#contact">Join us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <main>
+         <div
+            class="relative pt-16 pb-32 flex content-center items-center justify-center"
+            style="min-height: 88vh;"
+            >
+            <div
+               class="absolute top-0 w-full h-full bg-top bg-cover"
+               style='background-image: url("img/pin.jpg");'
+               >
+               <span
+                  id="blackOverlay"
+                  class="w-full h-full absolute opacity-50 bg-black "
+                  ></span>
+            </div>
+            <div class="container relative mx-auto ">
+               <div class="items-center flex flex-wrap">
+                  <div class=" w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                     <div class="pr-12">
+                        <h1 class="text-white font-Roboto text-5xl uppercase">
+                           Pingo: the best of the best!
+                        </h1>
+                        <p class=" text-lg font-Roboto pink1 bg-white rounded uppercase m-5">
+                           If you want to join us click on the link below          
+                        </p>
+                        <p class="flex  justify-center">
+
+                        <a href="https://www.instagram.com/pingoiraq/"
+                           class=" pink  hover:pink text-white font-semibold hover:text-white w-64 border
+                           hover:border-transparent rounded inline-block mt-5 cursor-pointer  btn-grad">See More  </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div
+               class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+               style="height: 70px;"
+               >
+               <svg
+                  class="absolute bottom-0 overflow-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                  >
+                  <polygon
+                     class="text-white fill-current"
+                     points="2560 0 2560 100 0 100"
+                     ></polygon>
+               </svg>
+            </div>
+         </div>
+         <section class="bg-white border-b py-8" id="story" >
+            <div class="container max-w-5xl mx-auto m-8">
+               <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                  Pingo Story        </h1>
+               <div class="w-full mb-4">
+                  <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+               </div>
+               <div class="flex flex-wrap">
+                  <div class="w-5/6 sm:w-1/2 p-6">
+                     <h3 class="text-3xl text-gray-800 font-bold font-Roboto leading-none mb-3 uppercase text-center">
+                        Pingo love story            </h3>
+                     <p class="text-gray-600 mb-8 font-Roboto text-center m-5">
+                        A man and a girl who love each other decided to open their own business with a budget of 300 dollars, they import a set of pins and sell them                        <br />
+
+                        Get more information:
+
+                        <a class="text-pink-500 underline" href="https://www.facebook.com/Pingoiraq/">
+                           facebook page</a>
+                     </p>
+                  </div>
+                  <div class="w-full sm:w-1/2 p-6 ">
+                     <img src="img/pp.jpg" alt=""
+                     class="rounded">
+                  </div>
+               </div>
+               <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+                  <div class="w-full sm:w-1/2 p-6 mt-6">
+                     <img src="img/ps.jpg" alt="" class="rounded">
+                  </div>
+                  <div class="w-full sm:w-1/2 p-6 mt-6">
+                     <div class="align-middle">
+                        <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3 uppercase text-center">
+                           So what is a Pingo ?
+                        </h3>
+                        <p class="text-gray-600 mb-8 item-center text-center align-center">
+                           <br>
+                           Everyone sees the pins that come as a gift with
+                           a clothes or jacket It is the first brand specialized only in assembling and manufacturing nails that are made of metal, wood or MIX.                          <br />
+                           <br />
+                           Pingo  instagram:
+
+                           <a class="text-pink-500 underline" href="https://www.instagram.com/pingoiraq/">Instagram</a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="relative py-20" >
+            <div
+               class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+               style="height: 80px;"
+               >
+               <svg
+                  class="absolute bottom-0 overflow-hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  version="1.1"
+                  viewBox="0 0 2560 100"
+                  x="0"
+                  y="0"
+                  >
+                  <polygon
+                     class=" pink text-white fill-current"
+                     points="2560 0 2560 100 0 100"
+                     ></polygon>
+               </svg>
+            </div>
+            <div class="container mx-auto px-4">
+               <div class="items-center flex flex-wrap">
+                  <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                     <img
+                        alt="Pingo"
+                        class="max-w-full rounded-lg shadow-lg"
+                        src="img/pa.jpg"
+                        />
+                  </div>
+                  <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                     <h3 class="text-4xl inline-block font-semibold uppercase mr-5 px-5  " id="about">What is the benefit of Pingo? </h3>
+                     <div class="md:pr-12 ">
+                        <div
+                           class=" p-3 inline-flex items-center justify w-16 h-13  mb-6 rounded-full "
+                           >
+
+                        </div>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                           Today, Pingo has become a big brand and has points of sale in more than one place. You can visit us and enjoy our services.
+                        </p>
+                        <ul class="list-none mt-6">
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs pink  font-semibold inline-block py-1 px-3 uppercase rounded-full   mr-3 text-yellow-300 pink  mr-3 "
+                                       ><i class="fas fa-briefcase"></i>
+                                    </span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">
+                                       Carefully crafted components
+                                    </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-yellow-300 pink mr-3"
+                                       ><i class="fas fa-star"></i> </span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">Each Dunbus tells a specific story </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-yellow-300 pink mr-3"
+                                       ><i class="fas fa-clipboard"></i
+                                       ></span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">Companies use it to promote </h4>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="py-2">
+                              <div class="flex items-center">
+                                 <div>
+                                    <span
+                                       class="text-xs font-semibold inline-block py-1 px-3 uppercase rounded-full text-yellow-300 pink mr-3"
+                                       ><i class="fas fa-pencil-alt"></i
+                                       ></span>
+                                 </div>
+                                 <div>
+                                    <h4 class="text-gray-600">Note Books </h4>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="bg-white py-8" id="store">
+
+            <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+
+               <nav  class="w-full z-30 top-0 px-6 py-1">
+                  <div class="w-full container mx-auto flex flex-wrap items-center justify-center mt-0 px-2 py-3">
+
+                     <a class="text-4xl inline-block font-semibold uppercase mr-5 px-5 " href="#">
+                       Pingo Store
+                     </a>
+
+                     <div class="flex items-center" id="store-nav-content">
+
+
+
+                     </div>
+                  </div>
+               </nav>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/asa.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">5,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/sh.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/sho.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/shoo.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/shooo.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/shopp.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/shop.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">10,000 IRQ</p>
+                  </a>
+               </div>
+
+               <div class=" md:w-1/3 xl:w-1/4 p-6 flex ">
+                  <a href="#">
+                     <img class="hover:grow hover:shadow-lg rounded" src="img/fs.jpg">
+                     <div class="pt-3 flex items-center justify-between">
+                        <p class="">Price</p>
+                        <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                           <path d="M12,4.595c-1.104-1.006-2.512-1.558-3.996-1.558c-1.578,0-3.072,0.623-4.213,1.758c-2.353,2.363-2.352,6.059,0.002,8.412 l7.332,7.332c0.17,0.299,0.498,0.492,0.875,0.492c0.322,0,0.609-0.163,0.792-0.409l7.415-7.415 c2.354-2.354,2.354-6.049-0.002-8.416c-1.137-1.131-2.631-1.754-4.209-1.754C14.513,3.037,13.104,3.589,12,4.595z M18.791,6.205 c1.563,1.571,1.564,4.025,0.002,5.588L12,18.586l-6.793-6.793C3.645,10.23,3.646,7.776,5.205,6.209 c0.76-0.756,1.754-1.172,2.799-1.172s2.035,0.416,2.789,1.17l0.5,0.5c0.391,0.391,1.023,0.391,1.414,0l0.5-0.5 C14.719,4.698,17.281,4.702,18.791,6.205z" />
+                        </svg>
+                     </div>
+                     <p class="pt-1 text-gray-900">5,000 IRQ</p>
+                  </a>
+
+               </div>
+
+            </div>
+            <p class="flex  justify-center">
+
+               <a href="https://www.instagram.com/pingoiraq/"
+                  class=" pink  hover:pink text-white font-semibold hover:text-white w-64 border
+                           hover:border-transparent rounded inline-block mt-5 cursor-pointer  btn-grad">Buy Now </a>
+            </p>
+
+         </section>
+
+         <section class="pt-20 pb-48" id="BUSINESS">
+            <div class="container mx-auto px-4">
+               <div class="flex flex-wrap justify-center text-center mb-24">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <h2 class="text-4xl font-semibold uppercase ">our business for companies</h2>
+                  </div>
+               </div>
+               <div class="flex flex-wrap">
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+                           src="img/rh.jpg"
+                           class="shadow-lg rounded max-w-full mx-auto rounded"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Ridha Alwan Coffee</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+
+                           src="img/st.jpg"
+                           class="shadow-lg rounded max-w-full mx-auto rounded"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">The Station </h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+src="img/hans.jpg"                           class="shadow-lg rounded max-w-full mx-auto rounded"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Hansel</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                     <div class="px-6">
+                        <img
+                           alt="..."
+src="img/ja.jpg"                           class="shadow-lg rounded max-w-full mx-auto rounded"
+                           style="max-width: 250px;"
+                           />
+                        <div class="pt-6 text-center">
+                           <h5 class="text-xl font-bold">Iraq postag</h5>
+                           <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                              Available in store
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="pb-20 relative block bg-white text-black" id="contact">
+            <div
+               class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+               style="height: 80px;"
+               >
+            </div>
+            <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+               <div class="flex flex-wrap text-center justify-center">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <h2 class="text-4xl font-semibold text-black uppercase ">contact us</h2>
+                     <p class="text-lg leading-relaxed mt-4 mb-4 text-black text-bold uppercase">
+                        contact us to ask about anything and if you have buy pins we will be happy
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="relative block py-24 lg:pt-0 bg-white">
+            <div class="container mx-auto px-4">
+               <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                  <div class="w-full lg:w-6/12 px-4">
+                     <div
+                        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                        >
+                        <div class="flex-auto p-5 lg:p-10 pink text-white">
+                           <h4 class="text-2xl font-semibold uppercase">Want to work with us?</h4>
+                           <p class="leading-relaxed mt-1 mb-4 text-pink-200">
+                              Complete this form and we will get back to you in 24 hours.
+                           </p>
+                           <div class="relative w-full mb-3 mt-8">
+                              <label
+                                 class="block uppercase text-gray-700 text-xs text-pink-200 font-bold mb-2"
+                                 for="full-name" >Full Name</label>
+                              <input
+                                 type="text"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Full Name"
+                                 style="transition: all 0.15s ease 0s;"
+                                 />
+                           </div>
+                           <div class="relative w-full mb-3">
+                              <label
+                                 class="block uppercase text-gray-700 text-pink-200 text-xs font-bold mb-2"
+                                 for="email"
+                                 >Email</label
+                                 ><input
+                                 type="email"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Email"
+                                 style="transition: all 0.15s ease 0s;"
+                                 />
+                           </div>
+                           <div class="relative w-full mb-3">
+                              <label
+                                 class="block uppercase text-gray-700 text-xs text-pink-200 font-bold mb-2"
+                                 for="message"
+                                 >Message</label
+                                 ><textarea
+                                 rows="4"
+                                 cols="80"
+                                 class="border-0 px-3 py-3 placeholder-gray-400 text-pink-200 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                                 placeholder="Type a message..."
+                                 ></textarea>
+                           </div>
+                           <div class="text-center mt-6">
+                              <button
+                                 class="bg-white text-gray-500 active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                 type="button"
+                                 style="transition: all 0.15s ease 0s;"
+                                 >
+                              Send Message
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="relative bg-gray-600 pt-8">
+
+         <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+               <div class="w-full text-white">
+                  <div class="xl:px-40 pb-12 lg:px-20 md:px-10 sm:px-5 px-10">
+                     <div class="w-full pt-12 flex flex-col sm:flex-row space-y-2  justify-start">
+                        <div class="w-full sm:w-3/5 pr-6 flex flex-col space-y-4">
+                           <img
+                              alt="Pingo"
+                              class="object-scale-down w-10 rounded-lg shadow-lg"
+                              src="https://scontent.fbgw11-1.fna.fbcdn.net/v/t1.6435-9/45138435_300018437268957_3381279318071050240_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=IK6yYpP0decAX9TMsP3&_nc_ht=scontent.fbgw11-1.fna&oh=a1a1b5fcd22c72626b14ec79f35f8488&oe=60D8336B"
+                              />                
+                           <p>Al-Fusia Restaurant and Cafe Building, Arsat Al-Hindiya, Baghdad
+                           </p>
+                        </div>
+                        <div class="w-full sm:w-1/5 flex flex-col space-y-4">
+                           <a>About Us</a>
+                           <a>Responsibilities</a>
+                           <a>Out Services</a>
+                           <a>Contact</a>
+                        </div>
+                        <div class="w-full sm:w-1/5 mb-1  space-y-4">
+                           <h5 class="text-lg mt-0 mb-2 text-white">
+                              Find us on any of these platforms
+                           </h5>
+                           <h4>Follow us on social media</h4>
+                           <div class="flex flex-row space-x-4">
+                              <a href="https://www.facebook.com/Pingoiraq/?ref=page_internal"
+                                 class=""> <i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.facebook.com/Pingoiraq/?ref=page_internal"
+                                 class=""> <i class="fab fa-instagram"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="opacity-60 pt-2">
+                        <p>© 2020 Executive Trade International.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </footer>
+   </body>
+   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide">
+      document.getElementById('nav-toggle').onclick = function () {
+         document.getElementById("nav-content").classList.toggle("hidden");
+      }
+      var before = document.querySelector('#options-peek-before')
+      var after = document.querySelector('#options-peek-after')
+
+
+
+      before.addEventListener('input', peek)
+      after.addEventListener('input', peek)
+
+      glide.mount()
+   </script>
+</html>
+
